@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kiyen</title>
+    <link rel="stylesheet" href="styles.css"></head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>kiyen</h1>
+            <div class="header-buttons">
+                <button class="header-button" onclick="copyToClipboard('kiyen')">
+                    <img src="discord.png" width="24" height="24" alt="Icon" class="icon">
+                    <span>kiyen</span>
+                </button>
+                <button class="header-button" onclick="copyToClipboard('kiyen')">
+                    <img src="telegram.png" width="24" height="24" alt="Icon" class="icon">
+                    <span>kiyen</span>
+                </button>
+            </div>
+        </header>
+        <div class="link-container">
+            <div class="link-column">
+                <a href="https://steamcommunity.com/id/kiyen" class="button">
+                    <img src="steam.png" width="32" height="32" alt="Icon">
+                    <div class="text">
+                        <span class="title">steam</span>
+                        <span class="subtitle">steamcommunity.com/id/kiyen</span>
+                    </div>
+                </a>
+                <a href="https://www.youtube.com/@kiyen-" class="button">
+                    <img src="youtube.png" width="32" height="32" alt="Icon">
+                    <div class="text">
+                        <span class="title">youtube</span>
+                        <span class="subtitle">youtube.com/@kiyen-</span>
+                    </div>
+                </a>
+            </div>
+            <div class="vertical-divider"></div>
+            <div class="link-column">
+                <a href="https://www.faceit.com/en/players/kiyen-" class="button">
+                    <img src="faceit.png" width="32" height="32" alt="Icon">
+                    <div class="text">
+                        <span class="title">faceit</span>
+                        <span class="subtitle">faceit.com/en/players/kiyen-</span>
+                    </div>
+                </a>
+                <a href="https://settings.gg/kiyen" class="button">
+                    <img src="settings.png" width="32" height="32" alt="Icon">
+                    <div class="text">
+                        <span class="title">settings</span>
+                        <span class="subtitle">settings.gg/kiyen</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function copyToClipboard(text) {
+            // Create a temporary textarea element
+            var textarea = document.createElement("textarea");
+            // Set the value of the textarea to the text to be copied
+            textarea.value = text;
+            // Make the textarea invisible
+            textarea.style.position = "absolute";
+            textarea.style.left = "-9999px";
+            // Append the textarea to the document
+            document.body.appendChild(textarea);
+            // Select the text in the textarea
+            textarea.select();
+            // Copy the selected text to the clipboard
+            document.execCommand("copy");
+            // Remove the textarea from the document
+            document.body.removeChild(textarea);
+        }
+    </script>
+</body>
+</html>
